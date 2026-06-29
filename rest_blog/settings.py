@@ -25,7 +25,10 @@ SECRET_KEY = 'django-insecure-mbh7ca2=8+1wl!vf)k(dvxr8)#fns0ly(faa#=9_u_xzsr)s@5
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    "127.0.0.1",
+    "localhost",
+]
 
 
 # Application definition
@@ -55,6 +58,7 @@ MIDDLEWARE = [
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
+    "http://127.0.0.1:5173",
 ]
 
 ROOT_URLCONF = 'rest_blog.urls'
